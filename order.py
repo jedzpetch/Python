@@ -13,13 +13,14 @@ import aboutus
 import addorder
 import pymysql
 import editorder
+import imageorder
 
 
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(975, 816)
+        MainWindow.setFixedSize(975, 816)
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("ui\\../../resorce/icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)

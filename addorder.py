@@ -10,13 +10,13 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import pymysql
-
+import imageaddorder
 
 
 class Ui_addorder(object):
     def setupUi(self, addorder):
         addorder.setObjectName("addorder")
-        addorder.resize(778, 598)
+        addorder.setFixedSize(778, 598)
         addorder.setMinimumSize(QtCore.QSize(778, 598))
         addorder.setMaximumSize(QtCore.QSize(778, 598))
         icon = QtGui.QIcon()

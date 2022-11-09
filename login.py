@@ -11,11 +11,12 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import order
 import mysql
+import imagelogin
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(563, 499)
+        Dialog.setFixedSize(563, 499)
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("ui\\../../resorce/icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Dialog.setWindowIcon(icon)
