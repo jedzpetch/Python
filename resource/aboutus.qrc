@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="image">
+    <file>star.png</file>
+    <file>stars.png</file>
+    <file>icon.png</file>
+    <file>icons.png</file>
+  </qresource>
+</RCC>

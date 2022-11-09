@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="image">
+    <file>tea1.png</file>
+    <file>tea2.png</file>
+    <file>tea3.png</file>
+    <file>icons.png</file>
+    <file>star.png</file>
+    <file>stars.png</file>
+    <file>starss.png</file>
+    <file>icon.png</file>
+  </qresource>
+</RCC>

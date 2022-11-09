@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>975</width>
+    <height>816</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>975</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>975</width>
+    <height>816</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>รายการสินค้า</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../resorce/icon.png</normaloff>../../resorce/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color : rgb(255, 218, 212)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>25</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25pt &quot;Segoe UI&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>รายการสินค้า</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addorder">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>70</y>
+      <width>241</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+background-color : rgb(255, 216, 215)</string>
+    </property>
+    <property name="text">
+     <string>เพิ่มรายการน้ำ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delorder">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>160</y>
+      <width>241</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+background-color : rgb(255, 216, 215)</string>
+    </property>
+    <property name="text">
+     <string>แก้ไขหรือลบรายการน้ำ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reset">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>630</y>
+      <width>251</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+background-color : rgb(255, 216, 215)</string>
+    </property>
+    <property name="text">
+     <string>รีเซ็ต</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="menutableWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>661</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustIgnored</enum>
+    </property>
+    <property name="autoScroll">
+     <bool>true</bool>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::CurrentChanged|QAbstractItemView::DoubleClicked</set>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>false</bool>
+    </property>
+    <property name="textElideMode">
+     <enum>Qt::ElideLeft</enum>
+    </property>
+    <property name="showGrid">
+     <bool>true</bool>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::SolidLine</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>120</number>
+    </attribute>
+    <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="foreground">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ชื่อเมนู</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>รายละเอียด</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ราคา</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="image2">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>-20</y>
+      <width>191</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/image/stars.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="image1">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>-20</y>
+      <width>71</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/image/icon.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="image6">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>700</y>
+      <width>261</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/image/tea1.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="image4">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>690</y>
+      <width>261</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/image/tea2.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="image3">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>690</y>
+      <width>261</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/image/tea3.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="image5">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>700</y>
+      <width>261</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/image/tea1.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>image5</zorder>
+   <zorder>image3</zorder>
+   <zorder>image4</zorder>
+   <zorder>image6</zorder>
+   <zorder>image1</zorder>
+   <zorder>image2</zorder>
+   <zorder>label</zorder>
+   <zorder>addorder</zorder>
+   <zorder>delorder</zorder>
+   <zorder>reset</zorder>
+   <zorder>menutableWidget</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>975</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMain">
+    <property name="title">
+     <string>เมนูหลัก</string>
+    </property>
+    <addaction name="acadd"/>
+    <addaction name="acsummary"/>
+   </widget>
+   <widget class="QMenu" name="menuAboutus">
+    <property name="title">
+     <string>เกี่ยวกับ</string>
+    </property>
+    <addaction name="acaboutus"/>
+   </widget>
+   <addaction name="menuMain"/>
+   <addaction name="menuAboutus"/>
+  </widget>
+  <action name="acadd">
+   <property name="text">
+    <string>เพิ่มรายการสินค้า</string>
+   </property>
+  </action>
+  <action name="acsummary">
+   <property name="text">
+    <string>สรุปรายการสั่งซื้อ</string>
+   </property>
+  </action>
+  <action name="acaboutus">
+   <property name="text">
+    <string>About us</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../resource/order.qrc"/>
+ </resources>
+ <connections/>
+</ui>
